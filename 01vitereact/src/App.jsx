@@ -1,12 +1,10 @@
-import { useState } from 'react'
-
+import Chai from './chai'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <h1>React with Vite | SRJ</h1>
+    <>           
+      <Chai/>
+    </> 
   )
 }
-
 export default App
