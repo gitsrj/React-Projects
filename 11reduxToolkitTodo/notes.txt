@@ -1,0 +1,19 @@
+Redux ek core library hai and react-redux ek implementation hai to wire react with redux.
+redux-toolkit does alot of work automatically.
+
+- starts with store.(Usually only a single store is created, aka single source of truth.) (Exceptions are always there but only one single store is present)
+
+- stores update the values only with the help of reducers(functions).
+
+- Features are called as Slice(syntax)
+
+- Slice takes name, initialState, and reducers
+
+- reducers k andar 2 chizo ka access milta hai - state and action
+  state - ke andar updated state value in the store milti hai (state ke andar multiple slices ho sakte jaise todo, authentication, etc. )
+  action - action.payload (basically vo jispe kam karana hai ya kam karna hai jaise id, text, etc.)
+
+- Dispatch - values bhejna hai
+  Dispatch ke through reducer ko bhej diya
+
+- Selector - values lena(select karna) hai, from state
